@@ -1,0 +1,28 @@
+.lists-selection-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.select-list-btn {
+    padding: 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.select-list-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.cancel-btn.full-width {
+    width: 100%;
+    margin-top: 10px;
+}

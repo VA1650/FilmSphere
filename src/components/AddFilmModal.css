@@ -1,0 +1,72 @@
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    /* 💡 КЛЮЧЕВОЕ ИСПРАВЛЕНИЕ: Это гарантирует, что 100% ширины включает padding и border */
+    box-sizing: border-box; 
+}
+.modal-results {
+    flex: 1;
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.modal-result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.modal-result-item:hover {
+    background-color: #f9f9f9;
+}
+
+.modal-result-item img {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.result-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-title { font-weight: bold; font-size: 14px; }
+.result-year { color: #666; font-size: 12px; }
+
+.close-btn {
+    padding: 8px;
+    background: #ddd;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
